@@ -1,4 +1,7 @@
+
 # xss
+
+document.cookie = "USERID=<escaped-value>; path=/; secure; HttpOnly";
 
 xss payloads
 
